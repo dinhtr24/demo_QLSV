@@ -59,8 +59,11 @@
             this.rbNam = new System.Windows.Forms.RadioButton();
             this.rbNu = new System.Windows.Forms.RadioButton();
             this.NgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.btnAnh = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvSinhVien
@@ -77,7 +80,7 @@
             this.ColumnEmail});
             this.dgvSinhVien.Location = new System.Drawing.Point(12, 12);
             this.dgvSinhVien.Name = "dgvSinhVien";
-            this.dgvSinhVien.Size = new System.Drawing.Size(822, 196);
+            this.dgvSinhVien.Size = new System.Drawing.Size(845, 196);
             this.dgvSinhVien.TabIndex = 0;
             // 
             // ColumnHT
@@ -161,6 +164,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAnh);
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.NgaySinh);
             this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.rbNu);
@@ -184,7 +189,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 228);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(501, 379);
+            this.groupBox1.Size = new System.Drawing.Size(673, 379);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sinh viên";
@@ -266,42 +271,42 @@
             // 
             this.tbHT.Location = new System.Drawing.Point(121, 22);
             this.tbHT.Name = "tbHT";
-            this.tbHT.Size = new System.Drawing.Size(280, 20);
+            this.tbHT.Size = new System.Drawing.Size(363, 20);
             this.tbHT.TabIndex = 8;
             // 
             // tbMSSV
             // 
             this.tbMSSV.Location = new System.Drawing.Point(121, 59);
             this.tbMSSV.Name = "tbMSSV";
-            this.tbMSSV.Size = new System.Drawing.Size(280, 20);
+            this.tbMSSV.Size = new System.Drawing.Size(363, 20);
             this.tbMSSV.TabIndex = 9;
             // 
             // tbNS
             // 
             this.tbNS.Location = new System.Drawing.Point(121, 174);
             this.tbNS.Name = "tbNS";
-            this.tbNS.Size = new System.Drawing.Size(280, 20);
+            this.tbNS.Size = new System.Drawing.Size(363, 20);
             this.tbNS.TabIndex = 10;
             // 
             // tbK
             // 
             this.tbK.Location = new System.Drawing.Point(121, 214);
             this.tbK.Name = "tbK";
-            this.tbK.Size = new System.Drawing.Size(280, 20);
+            this.tbK.Size = new System.Drawing.Size(363, 20);
             this.tbK.TabIndex = 11;
             // 
             // tbSDT
             // 
             this.tbSDT.Location = new System.Drawing.Point(121, 253);
             this.tbSDT.Name = "tbSDT";
-            this.tbSDT.Size = new System.Drawing.Size(280, 20);
+            this.tbSDT.Size = new System.Drawing.Size(363, 20);
             this.tbSDT.TabIndex = 13;
             // 
             // tbE
             // 
             this.tbE.Location = new System.Drawing.Point(121, 284);
             this.tbE.Name = "tbE";
-            this.tbE.Size = new System.Drawing.Size(280, 20);
+            this.tbE.Size = new System.Drawing.Size(363, 20);
             this.tbE.TabIndex = 14;
             // 
             // rbNam
@@ -330,14 +335,34 @@
             // 
             this.NgaySinh.Location = new System.Drawing.Point(121, 140);
             this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Size = new System.Drawing.Size(280, 20);
+            this.NgaySinh.Size = new System.Drawing.Size(363, 20);
             this.NgaySinh.TabIndex = 17;
+            // 
+            // btnAnh
+            // 
+            this.btnAnh.Location = new System.Drawing.Point(577, 166);
+            this.btnAnh.Name = "btnAnh";
+            this.btnAnh.Size = new System.Drawing.Size(75, 23);
+            this.btnAnh.TabIndex = 19;
+            this.btnAnh.Text = "Thêm ảnh";
+            this.btnAnh.UseVisualStyleBackColor = true;
+            this.btnAnh.Click += new System.EventHandler(this.btnAnh_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(503, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(149, 138);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // QLSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 619);
+            this.ClientSize = new System.Drawing.Size(861, 619);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvSinhVien);
             this.Name = "QLSV";
@@ -345,6 +370,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,5 +408,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAnh;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

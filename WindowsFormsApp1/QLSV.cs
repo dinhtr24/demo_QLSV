@@ -38,8 +38,18 @@ namespace WindowsFormsApp1
             {
                 string gioitinh = rbNam.Checked ? "Nam" : "Nữ";
                 dgvSinhVien.Rows.Add(tbHT.Text, tbMSSV.Text, gioitinh, NgaySinh.Text, tbNS.Text, tbK.Text, tbSDT.Text, tbE.Text);
-                TC tC = new TC();
-                tC.ShowDialog();
+                if (tbSDT.Text[0] != '0')
+                {
+                    TC tc = new TC();
+                    label1.Text = "Số điện thoại phải bắt đầu bằng số 0";
+                    tc.ShowDialog();
+                }
+                else
+                {
+                    TC tc = new TC();
+                    tc.ShowDialog();
+                }
+                
             }
 
         }
@@ -57,6 +67,18 @@ namespace WindowsFormsApp1
         private void btnXoa_Click(object sender, EventArgs e)
         {
             dgvSinhVien.Rows.Clear();   
+        }
+
+        private void btnAnh_Click(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Title = "Open Image";
+            dlg.Filter = "All files (*.*)|*.*";
+            if (dlg.ShowDialog() == DialogResult.OK )
+            {
+                pictureBox1.ImageLocation = dlg.FileName;
+            }
         }
     }
 }
