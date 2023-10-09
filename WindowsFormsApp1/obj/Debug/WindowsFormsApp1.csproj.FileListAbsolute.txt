@@ -11,4 +11,3 @@ D:\demo_QLSV\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\demo_QLSV\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
 D:\demo_QLSV\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.TB.resources
 D:\demo_QLSV\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.TC.resources
-D:\demo_QLSV\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Them.resources
