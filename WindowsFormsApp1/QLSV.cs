@@ -29,26 +29,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int check = 1;
-            string[] text = { tbHT.Text, tbMSSV.Text, tbNS.Text, tbK.Text, tbSDT.Text, tbE.Text };
-            for (int i = 0; i < 6; i++)
-            {
-                if (text[i] == "")
-                {
-                    check = -1;
-                    break;
-                }
-            }
-            if (check == 1)
-            {
-                TC tc = new TC();
-                tc.ShowDialog();
-            }
-            else
-            {
-                TB tb = new TB();
-                tb.ShowDialog();
-            }
+            
         }
     }
 }
