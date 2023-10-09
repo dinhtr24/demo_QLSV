@@ -17,19 +17,15 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            Them them = new Them();
+            them.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }
